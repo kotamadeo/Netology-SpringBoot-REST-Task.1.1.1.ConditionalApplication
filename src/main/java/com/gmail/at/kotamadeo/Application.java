@@ -8,10 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
     public static void main(String[] args) {
-        try (var context = SpringApplication.run(Application.class, args)) {
-            var bean = context.getBean(SystemProfile.class);
-            System.out.println(bean.getProfile());
-        }
+        var context = SpringApplication.run(Application.class, args);
+        var bean = context.getBean(SystemProfile.class);
+        System.out.println(bean.getProfile());
     }
 
 }
