@@ -42,7 +42,7 @@ class ProfileControllerTest extends BaseIT {
     }
 
     @Test
-    void checkGetcurrentAppProfile() throws Exception {
+    void checkGetCurrentAppProfile() throws Exception {
         var profiles = environment.getActiveProfiles();
         for (String profile : profiles) {
             if (profile.equals("dev")) {
